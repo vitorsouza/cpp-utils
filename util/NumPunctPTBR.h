@@ -13,7 +13,7 @@
 #include <locale>
 #include <string>
 
-namespace br_ufes_inf_nemo_cpp_util {
+namespace cpp_util {
 
 using namespace std;
 

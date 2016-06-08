@@ -38,19 +38,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: nemo-utils-cpp
+all: cpp-utils
 
 # Tool invocations
-nemo-utils-cpp: $(OBJS) $(USER_OBJS)
+cpp-utils: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MacOS X C++ Linker'
-	g++  -o "nemo-utils-cpp" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++  -o "cpp-utils" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(CPP_DEPS)$(C_DEPS) nemo-utils-cpp
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(CPP_DEPS)$(C_DEPS) cpp-utils
 	-@echo ' '
 
 .PHONY: all clean dependents

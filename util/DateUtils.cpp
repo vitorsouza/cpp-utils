@@ -15,7 +15,7 @@ using namespace std;
 /* Maximum size of the string buffer used to format dates. */
 #define MAX_DATE_STRING_SIZE 100
 
-namespace br_ufes_inf_nemo_cpp_util {
+namespace cpp_util {
 
 /* Converts dates in human-readable format to machine-processable format for storing in objects. */
 time_t parseDate(const string& str, const string& format) {

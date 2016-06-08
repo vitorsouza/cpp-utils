@@ -11,7 +11,7 @@
 #include <sstream>
 #include "NumberUtils.h"
 
-namespace br_ufes_inf_nemo_cpp_util {
+namespace cpp_util {
 
 using namespace std;
 

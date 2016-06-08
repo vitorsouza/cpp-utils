@@ -9,7 +9,7 @@
 
 #include "NumPunctPTBR.h"
 
-namespace br_ufes_inf_nemo_cpp_util {
+namespace cpp_util {
 
 /* In pt-BR, integer and decimal parts of decimal numbers are separated with a ',': e.g., 3,14. */
 char NumPunctPTBR::do_decimal_point() const {

@@ -9,7 +9,7 @@
 
 #include "Tokenizer.h"
 
-namespace br_ufes_inf_nemo_cpp_util {
+namespace cpp_util {
 
 Tokenizer::Tokenizer(const string& str, char separator): stream(str) {
 	this->separator = separator;

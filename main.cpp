@@ -12,7 +12,7 @@
 #include "util/Tokenizer.h"
 
 using namespace std;
-using namespace br_ufes_inf_nemo_cpp_util;
+using namespace cpp_util;
 
 int main() {
 	// Parses a date (string -> time_t) using the pt-BR locale.
