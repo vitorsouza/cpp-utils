@@ -25,5 +25,8 @@ time_t parseDate(const string& str, const string& formato);
 /* Converts dates in machine-processable format to human-readable format for printing. */
 string formatDate(const time_t& t, const string& format);
 
+/* Verifies if a string contains a valid date according to a format. */
+bool validDate(const string& str, const string& format);
+
 }
 #endif

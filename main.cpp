@@ -17,6 +17,7 @@ using namespace cpp_util;
 int main() {
 	// Parses a date (string -> time_t) using the pt-BR locale.
 	string data = "15/07/2014";
+	cout << validDate(data, DATE_FORMAT_PT_BR_SHORT) << endl;
 	time_t hoje = parseDate(data, DATE_FORMAT_PT_BR_SHORT);
 	cout << hoje << endl << endl;
 

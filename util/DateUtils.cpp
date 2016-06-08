@@ -20,7 +20,7 @@ namespace cpp_util {
 /* Converts dates in human-readable format to machine-processable format for storing in objects. */
 time_t parseDate(const string& str, const string& format) {
 	// Creates an empty calendar.
-	struct tm calendar = {0, 0, 0, 0, 0, 0, 0, 0, 0};
+	struct tm calendar = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 	// Fills the calendar fields (year, month, day, etc.) based on the date string following the given format.
 	strptime(str.c_str(), format.c_str(), &calendar);
@@ -41,6 +41,11 @@ string formatDate(const time_t& t, const string& format) {
 
 	// Returns the buffer, which gets copied to the receiving string via copy constructor or assignment operator.
 	return buffer;
+}
+
+bool validDate(const string& str, const string& format) {
+	struct tm tm;
+	return strptime(str.c_str(), format.c_str(), &tm);
 }
 
 }
